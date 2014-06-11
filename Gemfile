@@ -13,6 +13,7 @@ group :test do
 	gem 'capybara'
 end
 
+gem 'heroku_secrets', git: 'git://github.com/alexpeattie/heroku_secrets'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
