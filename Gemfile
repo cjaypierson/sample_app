@@ -4,6 +4,8 @@ ruby '2.1.1'
 
 gem 'rails', '4.1.1'
 
+gem 'heroku_secrets', github: 'alexpeattie/heroku_secrets'
+
 group :development, :test do
   gem 'sqlite3', '1.3.8'
   gem 'rspec-rails', '2.13.1'
