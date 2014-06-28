@@ -3,17 +3,19 @@ ruby '2.1.1'
 #ruby-gemset=railstutorial_rails_4_0_5
 
 gem 'rails', '4.1.1'
+gem 'bootstrap-sass'
+gem 'sprockets'
 gem 'pg'
 
 gem 'heroku_secrets', github: 'alexpeattie/heroku_secrets'
 
 group :development, :test do
-  gem 'rspec-rails', '2.13.1'
+  gem 'rspec-rails'
+  gem 'capybara'
 end
 
 group :test do
-  gem 'selenium-webdriver', '2.35.1'
-  gem 'capybara', '2.1.0'
+  gem 'selenium-webdriver'
 end
 
 gem 'sass-rails', '4.0.1'
