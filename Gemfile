@@ -12,12 +12,15 @@ gem 'heroku_secrets', github: 'alexpeattie/heroku_secrets'
 
 group :development, :test do
   gem 'rspec-rails'
+  gem 'rspec-its'
   gem 'capybara'
 end
 
 group :test do
   gem 'selenium-webdriver'
   gem 'factory_girl_rails'
+  gem 'cucumber-rails', :require => false
+  gem 'database_cleaner', github: 'bmabey/database_cleaner'
 end
 
 gem 'sass-rails', '4.0.1'
