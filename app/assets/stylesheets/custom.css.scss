@@ -179,21 +179,44 @@ input {
 
 .users {
 	list-style: none;
-	margin: 0;
+	margin: 0 auto;
 	li {
 		overflow: auto;
-		padding: 10px 0;
-		border-top: 1px solid $grayLight;
-		&:last-child {
-			border-bottom: 1px solid $grayLight;
-		}
+		padding: 10px;
+		margin: 10px;
+		width: 20%;
+		float: left;
+	  border: 3px solid $grayLight;
 	}
 }
 
+/*microposts */
 
+.microposts {
+	list-style: none;
+	margin: 10px 0 0 0;
 
-
-
+	li {
+		padding: 10px;
+		border-top: 1px solid #e8e8e8;
+	}
+}
+.content {
+	display: block;
+}
+.timestamp {
+	color: $grayLight;
+}
+.gravatar {
+	float: left;
+	margin-right: 10px;
+}
+aside {
+	textarea {
+		height: 100px;
+		margin-bottom: 5px;
+	}
+}
 
 
 

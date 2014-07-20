@@ -20,6 +20,18 @@ module SessionsHelper
 		user == current_user
 	end
 
+	def correct_user
+		@micropost = current_user.microposts.find_by(id: params[:id])
+		redirect_to root_url if @micropost.nil?
+	end
+
+	def signed_in_user
+    unless signed_in?
+      store_location
+      redirect_to signin_url, notice: "Please sign in."
+    end
+  end
+
 	def signed_in?
 		!current_user.nil?
 	end
